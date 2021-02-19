@@ -4,14 +4,6 @@
     {
       "name": "main",
       "image": "PLACEHOLDER",
-      "logConfiguration": {
-        "logDriver": "awslogs",
-        "options": {
-          "awslogs-group": "spinnaker-ecs-demo",
-          "awslogs-region": "eu-central-1",
-          "awslogs-stream-prefix": "spinnaker"
-        }
-      },
       "portMappings": [
         {
           "hostPort": 80,
