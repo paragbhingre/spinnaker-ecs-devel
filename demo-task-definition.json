@@ -27,6 +27,6 @@
   "requiresCompatibilities": [
     "FARGATE"
   ],
-  "executionRoleArn": "SpinnakerManaged",
+  "executionRoleArn": "arn:aws:iam::910995322324:role/SpinnakerManaged",
   "networkMode": "awsvpc"
 }
