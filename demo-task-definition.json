@@ -28,5 +28,5 @@
     "FARGATE"
   ],
   "executionRoleArn": "SpinnakerManaged",
-  "networkMode": "awsvpc"
+  "networkMode": "bridge"
 }
