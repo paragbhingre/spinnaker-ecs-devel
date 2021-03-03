@@ -10,9 +10,18 @@
       "image": "PLACEHOLDER",
       "portMappings": [
         {
-          "hostPort": 80, 
-          "protocol": "tcp",
-          "containerPort": 80
+          "hostPort": [{
+      "name": "targetGroup",
+      "valueFrom": "arn:aws:ssm:us-west-2:910995322324:parameter/targetGroup"
+      }], 
+          "protocol": [{
+      "name": "targetGroup",
+      "valueFrom": "arn:aws:ssm:us-west-2:910995322324:parameter/targetGroup"
+      }],
+          "containerPort": [{
+      "name": "targetGroup",
+      "valueFrom": "arn:aws:ssm:us-west-2:910995322324:parameter/targetGroup"
+      }]
         }
       ],
       "environment": [
