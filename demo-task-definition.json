@@ -3,13 +3,14 @@
   "containerDefinitions": [
     {
       "name": "main",
+      "secrets": [{
+              "name": "targetGroup",
+              "valueFrom": "arn:aws:ssm:us-west-2:910995322324:parameter/targetGroup"
+      }],
       "image": "PLACEHOLDER",
       "portMappings": [
         {
-          "hostPort": [{
-              "name": "targetGroup",
-              "valueFrom": "arn:aws:ssm:us-west-2:910995322324:parameter/targetGroup"
-      }], 
+          "hostPort": 80, 
           "protocol": "tcp",
           "containerPort": 80
         }
