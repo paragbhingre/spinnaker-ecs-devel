@@ -5,13 +5,13 @@
       "name": "main",
       "secrets": [{
       "name": "targetGroup",
-      "valueFrom": "arn:aws:ssm:us-west-2:910995322324:parameter/targetGroup"
+      "valueFrom": "${ parameter['tg'] }"
       }],
       "image": "PLACEHOLDER",
       "portMappings": [
         {
           "hostPort": 80, 
-          "protocol": ${ parameter['tg'] },
+          "protocol": "${ parameter['tg'] }",
           "containerPort": 80
         }
       ],
