@@ -25,7 +25,7 @@
   "cpu": "256",
   "memory": "512",
   "requiresCompatibilities": [
-    "FARGATE"
+   "${ parameter['tg'] }"
   ],
   "executionRoleArn": "SpinnakerManaged",
   "networkMode": "awsvpc"
