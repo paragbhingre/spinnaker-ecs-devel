@@ -3,10 +3,6 @@
   "containerDefinitions": [
     {
       "name": "main",
-      "secrets": [{
-      "name": "targetGroup",
-      "valueFrom": "${ parameter['tg'] }"
-      }],
       "image": "PLACEHOLDER",
       "portMappings": [
         {
