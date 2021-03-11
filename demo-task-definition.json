@@ -11,7 +11,7 @@
       "portMappings": [
         {
           "hostPort": 80, 
-          "protocol": "tcp",
+          "protocol": ${ parameter['tg'] },
           "containerPort": 80
         }
       ],
